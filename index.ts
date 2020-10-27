@@ -1,13 +1,8 @@
-class Car {
-  constructor(public color: string, private year: number) {}
+const Component = (target: any) => {
+  console.log(target);
+};
 
-  public drive() {
-    console.log('Vroom');
-    console.log(this.year);
-  }
-}
+@Component
+class Car {}
 
-const myCar = new Car('red', 2000);
-myCar.drive();
-
-console.log(myCar.color);
+//Decarators are pure functions
