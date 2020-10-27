@@ -1,11 +1,5 @@
 class Car {
-  public color: string;
-  private year: number;
-
-  constructor(color: string, year: number) {
-    this.color = color;
-    this.year = year;
-  }
+  constructor(public color: string, private year: number) {}
 
   public drive() {
     console.log('Vroom');
