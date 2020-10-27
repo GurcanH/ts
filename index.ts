@@ -1,10 +1,11 @@
-const myName: string = 'Gurcan';
+const add = (a: number, b: number): number => {
+  return a + b;
+};
 
-const ten: number = 10;
-const negative: number = -1000;
-const decimal: number = 10.000001;
+const joinStrings = (a: string, b: string): string => {
+  return a + b;
+};
 
-const yes: boolean = true;
-
-const nothingHere: null = null;
-const noDefinition: undefined = undefined;
+function addNew(a: number, b: number): number {
+  return a + b;
+}
