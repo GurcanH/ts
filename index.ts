@@ -1,17 +1,18 @@
-interface PostGatekeeper {
-  title: string;
-  daysOld: number;
-  published: boolean;
+class Car {
+  color: string;
+  year: number;
+
+  constructor(color: string, year: number) {
+    this.color = color;
+    this.year = year;
+  }
+
+  drive() {
+    console.log('Vroom');
+  }
 }
 
-const post = {
-  title: 'Latest Typrescript News',
-  daysOld: 10,
-  published: true
-};
+const myCar = new Car('red', 2000);
+myCar.drive();
 
-const printPost = (postToPrint: PostGatekeeper) => {
-  return `${postToPrint.title} (${postToPrint.daysOld} days old}`;
-};
-
-console.log(printPost(post));
+console.log(myCar.color);
