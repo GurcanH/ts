@@ -1,8 +1,4 @@
-const Component = (target: any) => {
-  console.log(target);
-};
+import { Car } from './Car';
 
-@Component
-class Car {}
-
-//Decarators are pure functions
+const myCar = new Car();
+console.log(myCar.year);
